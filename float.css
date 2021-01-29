@@ -1,65 +1,61 @@
-body, html, p, h1, h2, h3, a {
-    padding: o;
+
+body, h1, h2, h3, h4, h5, h6, p, li, ul, html {
+    padding: 0;
     margin: 0;
-    border: o;
+    border: 0;
 }
-body {
-    background-color: rgb(255, 255, 187);
-}
-.navcontainer {
-    background-color: rgb(204, 204, 50);
-    height: 50px;
-    box-shadow: 2px 2px 5px gray;
-}
-.navcontainer li {
-    display: inline;
-    text-shadow:2px 2px 5px gray;
-}
-.navcontainer a {
+a {
     text-decoration: none;
     color: white;
-    margin-right: 10px;
+    text-shadow: 2px 2px 5px gray;
 }
-.left {
-    padding: 0;
-    margin-left: 10px;
-    float: left;
-}
-.right {
-    float: right;
-}
-.master {
-    text-align: center;
-    margin-top: 180px;
-}
-.container {
-    display: inline-block;
-}
-.content {
-    background-color:white;
-    border: 2px solid  rgb(204, 204, 50);
-    float: left;
-    width: 220px;  
-    margin-right: 10px;
-    margin-bottom: 10px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(204, 204, 50);
     box-shadow: 2px 2px 5px gray;
 }
-.content h2 {
-    text-align: initial;
-    margin: 15px 0 15px 15px;
-    text-shadow:1px 1px 2px gray;
+.nav-area {
+    list-style: none;
 }
-.content p {
-    text-align: initial;
-    padding: 0 20px 20px 20px;
+.nav-area li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.master {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content {
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    box-shadow: 2px 2px 5px gray;
 }
 .content a {
+    text-align: center;
+    background-color: rgb(204, 204, 50);
     text-decoration: none;
     color: white;
     width: 180px;
     padding: 10px;
     display: inline-block;
     margin-bottom: 15px;
-    background-color: rgb(204, 204, 50);
     box-shadow: 2px 2px 5px gray;
+    text-shadow: 2px 2px 5px gray;
+}
+.content h2 {
+    margin: 20px 0 15px 10px;
+}
+.content p {
+    margin: 10px;
 }
